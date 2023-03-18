@@ -1,0 +1,16 @@
+spring:
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+      naming:
+        # data 대소문자 구별
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/fintech?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
+    # username, password 통상적으로 공개 X
+    # project 목적 : 공개 처리
+    username: fintech
+    password: fintech
