@@ -1,0 +1,4 @@
+Spring:
+  profiles:
+    include:
+      - domain
