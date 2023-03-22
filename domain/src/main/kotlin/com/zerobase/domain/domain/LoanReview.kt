@@ -4,7 +4,7 @@ import javax.persistence.*
 
 @Entity
 @Table(name = "LOAN_REVIEW")
-class LoanReview (
+class LoanReview(
         @Column(name = "usr_key")
         val userKey: String,
 
@@ -13,8 +13,8 @@ class LoanReview (
 
         @Column(name = "loan_intrt")
         val loanInterest: Double,
-){
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        val id: Long? = null
+) {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    val id: Long? = null
 }
