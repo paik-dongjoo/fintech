@@ -8,6 +8,7 @@ class LoanReviewServiceImpl(
         private val loanReviewRepository: LoanReviewRepository
 ) : LoanReviewService {
     override fun loanReviewMain(userKey: String): LoanReviewDto.LoanReviewResponseDto {
+
         val loanResult = getLoanResult(userKey)
 
         return LoanReviewDto.LoanReviewResponseDto(

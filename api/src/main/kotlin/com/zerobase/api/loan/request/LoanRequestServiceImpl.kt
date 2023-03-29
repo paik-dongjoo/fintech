@@ -20,11 +20,7 @@ class LoanRequestServiceImpl(
         loanRequestInputDto.userRegistrationNumber =
                 encryptComponent.encryptString(loanRequestInputDto.userRegistrationNumber)
 
-        saveUserInfo(
-                loanRequestInputDto.toUserInfoDto(userKey)
-        )
-
-        loanRequestReview("")
+        saveUserInfo(loanRequestInputDto.toUserInfoDto(userKey))
 
         return LoanRequestDto.LoanRequestResponseDto(userKey)
     }
